@@ -1,0 +1,53 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pinedo Shopping</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+	<link rel="stylesheet" href="pinedo.css" />
+    <script src="js/vendor/modernizr.js"></script>
+  </head>
+  <body>
+	
+	
+	<div class="row">
+      <div class="large-12 columns">
+	  <div id="header">
+        <img src="logo.png">
+      </div>
+	  <div id="formulary">
+		<h3>Ingresa tu número de cédula para ver tus cupones.</h3>
+		<input type="text" id="ceduform">
+        <button id="okbutton">OK</button>
+	  </div>
+      <div id="results1">
+      	<h3>Boris Dedoff</h3>
+      	<p>Tenes 100 cupones.</p>
+        <button id="okbutton2">OK</button>
+      </div>
+	  
+	  
+    </div>
+	</div>
+    
+
+    
+    
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+	  
+	  $('#okbutton').click(function() {
+		  $('#formulary').slideUp();
+		  $('#results1').slideDown();
+	  });
+	  $('#okbutton2').click(function() {
+		  $('#formulary').slideDown();
+		  $('#results1').slideUp();
+	  });
+	  
+    </script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+#header {
+	padding-top:20px;
+	padding-bottom:20px;
+	text-align:center;
+}
+
+#formulary {
+	text-align:center;
+}
+
+#formulary h3{
+	
+}
+
+#ceduform {
+	background-color:#91298e;
+	color:#fff;
+}
+
+#results1 {
+	display:none;
+}
