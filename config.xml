@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap       = "http://phonegap.com/ns/1.0"
+    	xmlns:android   = "http://schemas.android.com/apk/res/android"
+        id          = "com.pinedoshopping.pinedo"
+        versionCode = "1" 
+        version     = "1.0.0" >
+
+    <!-- versionCode is optional and Android only -->
+	<preference name="phonegap-version" value="3.7.0" />
+	<preference name="splash-screen-duration" value="2000" />
+
+    <name>Pinedo Shopping</name>
+
+    <description>
+        Descargá esta aplicación para ver tus cupones!
+    </description>
+
+    <author href="http://www.pinedo.com.py" email="keuch2@gmail.com">
+        Pinedo Shopping
+    </author>
+	
+	<icon src="icon57.png" width="57" height="57" />
+	<icon src="icon114.png" width="114" height="114" />
+	
+	<gap:platform name="android" />
+	
+	<gap:splash src="Default.png" gap:platform="android" gap:density="ldpi" />
+	<gap:splash src="Default.png" gap:platform="android" gap:density="mdpi" />
+	<gap:splash src="Default.png" gap:platform="android" gap:density="hdpi" />
+	
+	<feature name="http://api.phonegap.com/1.0/network"/>
+
+	<access origin="*" />
+
+</widget>
