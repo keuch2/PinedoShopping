@@ -17,13 +17,14 @@
         <img src="logo.png">
       </div>
 	  <div id="formulary">
-		<h3>Ingresa tu número de cédula para ver tus cupones.</h3>
+		<h3>Ingresa tu número de cédula o RUC para ver tus cupones.</h3>
 		<input type="text" id="ceduform">
         <button id="okbutton">OK</button>
 	  </div>
       <div id="results1">
-      	<h3>Boris Dedoff</h3>
-      	<p>Tenes 100 cupones.</p>
+		<span id="loadhere">
+		</span>
+      	
         <button id="okbutton2">OK</button>
       </div>
 	  
@@ -38,10 +39,16 @@
     <script src="js/foundation.min.js"></script>
     <script>
       $(document).foundation();
-	  
+	  var lacedula;
 	  $('#okbutton').click(function() {
+		  $('#loadhere').empty();
 		  $('#formulary').slideUp();
 		  $('#results1').slideDown();
+		  var noCommas = $('#ceduform').val();
+		  lacedula = noCommas.replace(/[^\d\-]/g, '');
+		  
+		  $('#loadhere').load('http://mister.com.py/pinedo/app/connect.php?cedula='+lacedula);
+
 	  });
 	  $('#okbutton2').click(function() {
 		  $('#formulary').slideDown();

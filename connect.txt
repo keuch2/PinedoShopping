@@ -1,0 +1,12 @@
+<?php
+
+$uid="boris";
+$password="123";
+$ip="190.211.242.218";
+$port="21";
+
+sasql_connect ("Uid=".$uid.";Pwd=".$password.";ServerName=".$servername.";CommLinks=tcpip(host‌​=".$ip.";port=".$port.")");
+$result = sasql_query("SELECT * FROM yml.v_cupones_generados2");
+
+while($row = sasql_fetch_array($result)) {
+}
